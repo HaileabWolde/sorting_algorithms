@@ -12,8 +12,10 @@ void selection_sort(int *array, size_t size)
 {
 	size_t current, index, tmp, min_int_index;
 
-	index = 0;
+	if (size < 2)
+		return;
 
+	index = 0;
 	while (array && index < size)
 	{
 		min_int_index = index;
